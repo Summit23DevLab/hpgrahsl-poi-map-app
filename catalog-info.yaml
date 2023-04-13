@@ -14,11 +14,8 @@ metadata:
     - angular
     - workshop
   links:
-    - url: https://devspaces.apps.summit23.0x74.p1.openshiftapps.com/#https://github.com/Summit23DevLab/hpgrahsl-poi-map-app?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+    - url: https://devspaces.apps.summit23.0x74.p1.openshiftapps.com/#https://github.com/Summit23DevLab/hpgrahsl-poi-map-app?che-editor=che-incubator/che-code/latest&devfilePath=.devfile-vscode.yaml
       title: CodeReady Workspaces (VS Code)
-      icon: web
-    - url: https://devspaces.apps.summit23.0x74.p1.openshiftapps.com/#https://github.com/Summit23DevLab/hpgrahsl-poi-map-app?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
-      title: CodeReady Workspaces (JetBrains IntelliJ)
       icon: web
 spec:
   type: service
