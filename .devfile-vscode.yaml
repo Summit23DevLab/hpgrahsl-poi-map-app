@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  generateName: ${{values.repoName}}
+  generateName: hpgrahsl-poi-map-app
   icon: https://raw.githubusercontent.com/devfile-samples/devfile-stack-icons/main/angular.svg
 attributes:
   controller.devfile.io/storage-type: ephemeral
@@ -16,6 +16,12 @@ components:
       image: registry.redhat.io/devspaces/udi-rhel8:3.4
       memoryLimit: 1Gi
       cpuLimit: 1500m
+      volumeMounts:
+        - name: npm
+          path: /home/user/.npm
+  - name: npm
+    volume:
+      size: 1G
 commands:
   - exec:
       commandLine: npm install
