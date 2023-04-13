@@ -12,11 +12,11 @@ components:
       image: registry.access.redhat.com/ubi8/nodejs-18:1-32
       args: ["tail", "-f", "/dev/null"]
       memoryLimit: 1024Mi
-  - name: runtime
+#  - name: runtime
 commands:
   - exec:
       commandLine: npm install
-      component: runtime
+      component: development-tooling
       group:
         isDefault: true
         kind: build
@@ -24,7 +24,7 @@ commands:
     id: install
   - exec:
       commandLine: npm run start
-      component: runtime
+      component: development-tooling
       group:
         isDefault: true
         kind: run
