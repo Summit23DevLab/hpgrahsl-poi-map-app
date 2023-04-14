@@ -32,7 +32,7 @@ commands:
       workingDir: ${PROJECT_SOURCE}
     id: install
   - exec:
-      commandLine: npm run start
+      commandLine: npm run start 0.0.0.0
       component: development-tooling
       group:
         isDefault: true
